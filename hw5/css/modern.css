@@ -1,0 +1,290 @@
+#github_icon{
+    background:white; 
+    border-radius: 1rem;
+}
+
+#github_icon:hover{
+    background:grey; 
+}
+
+#modern{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.navbar {
+    justify-content: flex-start
+}
+
+.input-group{
+    flex-wrap: nowrap;
+}
+
+/* .navbar--fixed-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: var(--ifm-z-index-fixed);
+    border:1px solid rgb(20, 9, 9);
+} */
+
+.inner{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__brand {
+    align-items: center;
+    display: flex;
+    margin-right: 1rem;
+    min-width: 0;
+}
+
+.icon{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.mainpage{
+    /* align-items: center;
+    flex: 1 0 auto;
+    border: 1px solid black;
+    height: 100%;
+    background-image: url(https://lf3-static.bytednsdoc.com/obj/eden-cn/aphqeh7uhohpquloj/modern-js/bg.png);
+    background-origin: border-box;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    box-sizing: border-box; */
+    align-items: flex-start;
+    background-color: #000;
+    background-image: url(https://lf3-static.bytednsdoc.com/obj/eden-cn/aphqeh7uhohpquloj/modern-js/bg.png);
+    background-origin: border-box;
+    background-position: bottom;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding-left: 18%;
+    position: relative;
+    
+}
+
+.logo{
+    width: 70vw;
+    margin-top: 60px;
+    width: 539px;
+}
+img{
+    height: auto;
+}
+
+.myflex {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+/* 介绍的css */
+.intro{
+    background: linear-gradient(274.85deg,#4ecaff 3%,#64cfde 97.17%);
+    border-radius: 39px;
+    box-shadow: 0 1px 39px rgb(133 250 202 / 34%);
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    line-height: 48px;
+    opacity: .8;
+    width: 147px;
+}
+
+.intro, .intro:hover {
+    color: #000;
+    transition: opacity .3s;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.intro{
+    align-items: center;
+    cursor: pointer;
+}
+
+.doc-btn_gVIP{
+    align-items: center;
+    background: hsla(0,0%,100%,.07);
+    border: 1px solid #4ecaff;
+    border-radius: 3rem;
+    box-sizing: border-box;
+    color: #00b3ff;
+    cursor: pointer;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    margin-left: 2rem;
+    transition: .3s;
+    width: 9rem;
+    text-decoration: none;
+}
+
+
+
+/* 对于文字的渲染 */
+.word{
+    color: azure;
+    font-family: Noto Sans SC;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+
+
+/* Images and content */
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+/* 最底层的渲染 */
+.floor{
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    background-color: #000;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.col a{
+    color: rgba(255, 255, 255, 0.853);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    overflow: hidden;
+    background: #000;
+    display: inline-block;
+    opacity: .95;
+    text-align: center;
+    width: 100%;
+}
+
+.col a:hover{
+    background: linear-gradient(0deg,rgba(46,232,246,.3),rgba(0,238,255,0));
+    cursor: pointer;
+    opacity: 1;
+}
+
+.col a:hover{
+    color: #fff;
+    transition: 3s;
+}
+
+.alink{
+    display: block;
+    padding: .5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+/* flex布局的开始 */
+/* 平板界面 */
+
+
+@media screen and (max-width: 1399px) and (min-height: 720px){
+    .myflex{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .intro{
+        align-items: center;
+        margin-top: 1rem;
+        width: 50%;
+        margin-left: 2rem;
+    }
+    .doc-btn_gVIP{
+        align-items: center;
+        margin-top: 6rem;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1399px) and (min-height: 1200px){
+    .myflex{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5rem;
+        width: 100%;
+    }
+    .intro{
+        align-items: center;
+        margin-top: 5rem;
+        width: 50%;
+        margin-left: 2rem;
+    }
+    .doc-btn_gVIP{
+        align-items: center;
+        margin-top: 8rem;
+        width: 50%;
+    }
+}
+
+/* 手机界面 */
+@media screen and (max-width: 540px){
+    .myflex{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 65%;
+    }
+    .intro{
+        align-items: center;
+        margin-top: 2rem;
+        width: 65%;
+        margin-left: 2rem;
+    }
+    .doc-btn_gVIP{
+        align-items: center;
+        margin-top: 2rem;
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .word {
+        font-size: 8vw
+    }
+    .logo{
+        width: 70vw;
+        margin-top: 60px;
+    } 
+}
